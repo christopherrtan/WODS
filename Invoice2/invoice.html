@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" type = "text/css" href = "invoice.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Extended Price</th>
+            </tr>
+        </thead>
+        <tbody id="invoiceTable">
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Sub-total</td>
+                <td id="subtotal_cell">$0.00</td>
+            </tr>
+            <tr>
+                <td colspan="3">Tax @ 5.75%</td>
+                <td id="tax_cell">$0.00</td>
+            </tr>
+            <tr>
+                <td colspan="3"><strong>Shipping Charge</strong></td>
+                <td id="shipping_cell"><strong>$0.00</strong></td>
+            </tr>
+            <tr>
+                <td colspan="3"><strong>Total</strong></td>
+                <td id="total_cell"><strong>$0.00</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <div>Our shipping policy is as follows: <br> 
+        1. A subtotal $0 - $49.99 will result in a $2 shipping fee. <br>
+        2. A subtotal $50 - $99.99 will result in a $5 shipping fee.<br>
+        3. Subtotals over $100 will be charged 5% of the subtotal amount.<br>
+    </div>
+    <script src="invoice.js"></script>
+</body>
+</html>
